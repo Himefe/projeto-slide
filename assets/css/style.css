@@ -28,6 +28,8 @@ img {
 
 .slide {
   display: flex;
+  will-change: transform;
+  
 }
 
 .slide li {
@@ -35,6 +37,16 @@ img {
   flex-shrink: 0;
   max-width: 800px;
   margin: 0 20px;
+  opacity: 0.8;
+  transform: scale(0.8);
+  transition: transform .7s;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.slide li.ativo {
+  opacity: 1;
+  transform: scale(1);
 }
 
 
