@@ -2,9 +2,8 @@ body {
   margin: 0;
   padding: 0;
   height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+
+
 }
 
 * {
@@ -24,6 +23,9 @@ img {
 
 .slide-wrapper {
   overflow-x: hidden;
+  overflow: hidden;
+  margin-top: 50px;
+
 }
 
 .slide {
@@ -47,6 +49,36 @@ img {
 .slide li.ativo {
   opacity: 1;
   transform: scale(1);
+}
+
+.arrowNav {
+  display: flex;
+  justify-content: space-around;
+}
+
+.prev, .next {
+  margin-top: 20px;
+}
+
+[data-control="slide"] {
+  justify-content: center;
+  display: flex;
+  margin-top: 20px;
+}
+
+[data-control="slide"] li {
+  
+  width: 15px;
+  height: 15px;
+  background-color: #FB5;
+  border-radius: 50%;
+  text-indent: -999px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+[data-control="slide"] li.ativo, [data-control="slide"] li:hover {
+  background-color: #E54;
 }
 
 
